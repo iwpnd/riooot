@@ -1,6 +1,6 @@
 # Redis riot
 
-Redis Riot is an open-source tool designed to migrate, replicate, and transform data in Redis. It can be particularly helpful when you need to:
+[Redis Riot](https://redis.github.io/riot/#_introduction) is an open-source tool designed to migrate, replicate, and transform data in Redis. It can be particularly helpful when you need to:
 
 Copy data between Redis instances (e.g., from one environment to another).
 Migrate or sync your data from Redis to other databases or external storage and vice versa.
