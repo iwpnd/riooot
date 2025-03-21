@@ -1,0 +1,6 @@
+FROM alpine/java:22-jdk
+
+RUN wget https://github.com/redis-field-engineering/riotx-dist/releases/download/v0.4.3/riotx-0.4.3.zip && unzip riotx-0.4.3.zip 
+WORKDIR /riotx-4.2.3/bin/
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]
