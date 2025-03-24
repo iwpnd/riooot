@@ -1,6 +1,8 @@
 FROM alpine/java:22-jdk
 
-RUN wget https://github.com/redis/riot/releases/download/v4.2.3/riot-4.2.3.zip && unzip riot-4.2.3.zip
-WORKDIR /riot-4.2.3/bin/
+ARG VERSION=4.2.3
+
+RUN wget https://github.com/redis/riot/releases/download/v${VERSION}/riot-${VERSION}.zip && unzip riot-${VERSION}.zip
+WORKDIR /riot-${VERSION}/bin/
 
 ENTRYPOINT ["tail", "-f", "/dev/null"]

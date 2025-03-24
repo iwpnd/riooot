@@ -22,3 +22,14 @@ docker exec -it redis-riot ./riot \
     redis://redis1:6379 \
     redis://redis2:6380
 ```
+
+or using riot-x
+
+```
+docker exec -it redis-riotx ./riotx \
+    replicate \
+    --threads=12 \
+    --batch=1000 \
+    redis://redis1:6379 \
+    redis://redis2:6380
+```

@@ -34,6 +34,17 @@ services:
         condition: service_healthy
     restart: "unless-stopped"
 
+  redis-riotx:
+    build:
+      context: ./riotx
+    container_name: redis-riotx
+    depends_on:
+      redis1:
+        condition: service_healthy
+      redis2:
+        condition: service_healthy
+    restart: "unless-stopped"
+
   redis-migration:
     build:
       context: ./migration
